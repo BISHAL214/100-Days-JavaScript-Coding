@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>What JavaScript Do ?</h2>
+    <p id="demo">JavaScript Can Change HTML Component.</p>
+    <p id="demo_2" style="display: none;">Hi JavaScript !</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript"'>Click Me</button>
+    <button type="button" onclick='document.getElementById("demo").style.fontSize = "30px"'>Click Me</button>
+    <button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+    <button type="button" onclick="document.getElementById('demo_2').style.display = 'block';">Click Me</button>
+
+
+
+    <h1>Hi This Is Me Bishal!</h1>
+
+    <p id="demo_3"></p>
+    <script>
+        document.getElementById('demo_3').innerHTML = 5 + 6;
+        window.alert(5 + 7);
+        console.log(3 + 6);
+    </script>   
+
+    <button type="button", onclick="window.print()">Print This Page</button>
+
+    <p id="demo_4"></p>
+
+    <script>
+        var  x;
+        let  y;
+        x = 6;
+        y = 4;
+        document.getElementById("demo_4").innerHTML = x * y;
+    </script>
+
+</body>
+</html> 

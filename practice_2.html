@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <p id="demo_2"></p>
+    <p id="demo_3"></p>
+    <p id="demo_4"></p>
+    <p id="demo_5"></p>
+    <p id="demo_6"></p>
+    <p id="demo_7"></p>
+    <p id="demo_8"></p>
+    
+    <button onclick="document.getElementById('demo_7').innerHTML = Date()">The Time is</button>
+
+    <button onclick="this.innerHTML = Date()">The Time is !</button>
+
+    <button onclick="displayDate()">Try Me</button>
+
+    <script>
+
+        function displayDate() {
+            document.getElementById("demo_8").innerHTML = Date();
+        }
+
+        let x = 16 + "Volvo"
+        document.getElementById("demo").innerHTML = x;
+
+        let car_1 = "BMW";
+        let car_2 = "Farari";
+        document.getElementById("demo_2").innerHTML = car_1 + "<hr>" + car_2;
+
+        let p = 5;
+        let q = 6;
+        let r = 5;
+        document.getElementById("demo_3").innerHTML = (p == r) + "<br>" + (q == r);
+
+        const person = {
+            firstName: "Bishal",
+            lastName: "Mondal",
+            age: 19,
+            hairColor: "black",
+        };
+        document.getElementById("demo_4").innerHTML = person.firstName + " " + person.lastName + " of " + person.age + " years old . His Hair Color is " + person.hairColor;
+
+
+        let result = myFunction(100, 2)
+        document.getElementById("demo_5").innerHTML = result;
+
+        function myFunction(n1, n2) {
+            return n1 * n2;
+        }
+
+
+        function toCelcius(f) {
+            return (5 / 9) * (f - 32);
+        }
+
+        let value = toCelcius(55);
+        document.getElementById("demo_6").innerHTML = value;
+
+
+
+
+    </script>
+</body>
+</html>

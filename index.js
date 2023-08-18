@@ -1,0 +1,1 @@
+console.log("This Content is from external JavaScript file");

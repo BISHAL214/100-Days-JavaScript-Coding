@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <p id="demo_2"></p>
+    <p id="demo_3"></p>
+    <p id="demo_4"></p>
+
+    <button onclick="myFunction()">Try ME</button>
+    <p id="demo_5">I Am Bishal Mondal</p>
+    <p id="demo_6"></p>
+
+
+    <script>
+
+        //string length //
+        let x = "qwertyuiopasdfghjklzxcvbnm";
+        document.getElementById("demo").innerHTML = x.length;
+        
+        //string Slice() //
+        //string substring //
+        // we can put substr(-value, -value) bcoz "-value" is count position from the end of the string
+        let text = "Mango, Lichi, Orange";
+        let part = text.slice(7);
+        document.getElementById("demo_2").innerHTML = part;
+
+        //string substring() //
+        // we can put substr(-value, -value) bcoz "-value" is count position from the end of the string
+        let str = "Volvo, BMW, Lambo, Audi";
+        let str_sub = str.substring(12,17);
+        document.getElementById("demo_3").innerHTML = str_sub;
+
+        //string substr() //
+        // we can put substr(-value, -length) bcoz "-value" is count position from the end of the string
+        let string = "Volvo, BMW, Lambo, Audi";
+        let string_sub = str.substr(7,16);
+        document.getElementById("demo_4").innerHTML = string_sub;
+
+        // string replace() //
+        function myFunction() {
+            let text = document.getElementById("demo_5").innerHTML;
+            document.getElementById("demo_5").innerHTML = 
+            text.replace("Bishal Mondal", "Anonymous");
+        }
+
+        //string replaceAll() //
+        let text_ = "I love cats. Cats are very easy to love. Cats are very popular."
+        text_ = text_.replaceAll("Cats","Dogs");
+        text_ = text_.replaceAll("Cats","Dogs");
+        document.getElementById("demo_6").innerHTML = text_;
+
+
+        
+
+    </script>
+
+</body>
+</html>
